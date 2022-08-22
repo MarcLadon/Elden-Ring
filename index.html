@@ -28,11 +28,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="nav-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#tabWeapons" data-toggle="tab" data-target="#tabWeapons,#btnHideCompleted">Weapons</a></li>
-          <li><a href="#tabShields" data-toggle="tab" data-target="#tabShields,#btnHideCompleted">Shields</a></li>
-          <li><a href="#tabArmors" data-toggle="tab" data-target="#tabArmors,#btnHideCompleted">Armor</a></li>
-          <li><a href="#tabSpells" data-toggle="tab" data-target="#tabSpells,#btnHideCompleted">Spells</a></li>
-          <li><a href="#tabTrophies" data-toggle="tab" data-target="#tabTrophy,#btnHideCompleted">Trophy</a></li>
+          <li class="active"><a href="#tabWeapons" data-toggle="tab" data-target="#tabWeapons,#btnHideCompleted">Armes</a></li>
+          <li><a href="#tabShields" data-toggle="tab" data-target="#tabShields,#btnHideCompleted">Boucliers</a></li>
+          <li><a href="#tabArmors" data-toggle="tab" data-target="#tabArmors,#btnHideCompleted">Armures</a></li>
+          <li><a href="#tabSpells" data-toggle="tab" data-target="#tabSpells,#btnHideCompleted">Sorts</a></li>
+          <li><a href="#tabDivers" data-toggle="tab" data-target="#tabTrophy,#btnHideCompleted">Divers</a></li>
+          <li><a href="#tabTrophies" data-toggle="tab" data-target="#tabTrophy,#btnHideCompleted">Trophées</a></li>
           <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
         </ul>
         <!-- /.nav.navbar-nav -->
@@ -74,35 +75,195 @@
          <!-- Toolbar -->
         <h2>Weapons<span id="weapons_overall_total"></span></h2>
         <ul class="table_of_contents">
-          <li><a href="#Axes">Axes</a> <span id="weapons_nav_totals_1"></span></li>
-          <li><a href="#Ballistas">Ballistas</a> <span id="weapons_nav_totals_2"></span></li>
-          <li><a href="#Bows">Bows</a> <span id="weapons_nav_totals_3"></span></li>
-          <li><a href="#Claws">Claws</a> <span id="weapons_nav_totals_4"></span></li>
-          <li><a href="#ColossalSwords">Colossal Swords</a> <span id="weapons_nav_totals_5"></span></li>
-          <li><a href="#CurvedGreatswords">Curved Greatswords</a> <span id="weapons_nav_totals_6"></span></li>
-          <li><a href="#CurvedSwords">Curved Swords</a> <span id="weapons_nav_totals_7"></span></li>
-          <li><a href="#Daggers">Daggers</a> <span id="weapons_nav_totals_8"></span></li>
-          <li><a href="#Flails">Flails</a> <span id="weapons_nav_totals_9"></span></li>
-          <li><a href="#GlintstoneStaffs">Glintstone Staffs</a> <span id="weapons_nav_totals_10"></span></li>
-          <li><a href="#GreatSpears">Great Spears</a> <span id="weapons_nav_totals_11"></span></li>
-          <li><a href="#Greatswords">Greatswords</a> <span id="weapons_nav_totals_12"></span></li>
-          <li><a href="#Halberds">Halberds</a> <span id="weapons_nav_totals_13"></span></li>
-          <li><a href="#Hammers">Hammers</a> <span id="weapons_nav_totals_14"></span></li>
-          <li><a href="#HeavyThrustingSwords">Heavy Thrusting Swords</a> <span id="weapons_nav_totals_15"></span></li>
-          <li><a href="#Katanas">Katanas</a> <span id="weapons_nav_totals_16"></span></li>
-          <li><a href="#LightBows">Light Bows</a> <span id="weapons_nav_totals_17"></span></li>
-          <li><a href="#Reapers">Reapers</a> <span id="weapons_nav_totals_18"></span></li>
-          <li><a href="#SacredSeals">Sacred Seals</a> <span id="weapons_nav_totals_19"></span></li>
-          <li><a href="#Spears">Spears</a> <span id="weapons_nav_totals_20"></span></li>
-          <li><a href="#StraightSwords">Straight Swords</a> <span id="weapons_nav_totals_21"></span></li>
-          <li><a href="#ThrustingSwords">Thrusting Swords</a> <span id="weapons_nav_totals_22"></span></li>
-          <li><a href="#Torches">Torches</a> <span id="weapons_nav_totals_23"></span></li>
-          <li><a href="#Twinblades">Twinblades</a> <span id="weapons_nav_totals_24"></span></li>
-          <li><a href="#Warhammers">Warhammers</a> <span id="weapons_nav_totals_25"></span></li>
-          <li><a href="#Whips">Whips</a> <span id="weapons_nav_totals_26"></span></li>
+          <li><a href="#Crossbows">Arbalètes</a> <span id="weapons_nav_totals_1"></span></li>
+          <li><a href="#Bows">Arcs</a><span id="weapons_nav_totals_2"></span></li>
+          <li><a href="#LightBows">Arcs légers</a> <span id="weapons_nav_totals_3"></span></li>
+          <li><a href="#ColossalWeapons">Armes colossales</a> <span id="weapons_nav_totals_4"></span></li>
+          <li><a href="#Ballistas">Ballistes</a> <span id="weapons_nav_totals_5"></span></li>
+          <li><a href="#GlintstoneStaffs">Bâtons d'éclat</a> <span id="weapons_nav_totals_6"></span></li>
+          <li><a href="#Daggers">Dagues</a> <span id="weapons_nav_totals_7"></span></li>
+          <li><a href="#ColossalSwords">Epées colossales</a> <span id="weapons_nav_totals_8"></span></li>
+          <li><a href="#CurvedSwords">Epées courbes</a> <span id="weapons_nav_totals_9"></span></li>
+          <li><a href="#ThrustingSwords">Epée d'estoc</a> <span id="weapons_nav_totals_10"></span></li>
+          <li><a href="#HeavyThrustingSwords">Epée d'estoc lourde</a> <span id="weapons_nav_totals_11"></span></li>
+          <li><a href="#StraightSwords">Epées droites</a> <span id="weapons_nav_totals_12"></span></li>
+          <li><a href="#Greatswords">Espadons</a> <span id="weapons_nav_totals_13"></span></li>
+          <li><a href="#CurvedGreatswords">Espadons courbes</a> <span id="weapons_nav_totals_14"></span></li>
+          <li><a href="#Reapers">Faux</a> <span id="weapons_nav_totals_15"></span></li>
+          <li><a href="#Flails">Fléaux</a> <span id="weapons_nav_totals_16"></span></li>
+          <li><a href="#Whips">Fouets</a> <span id="weapons_nav_totals_17"></span></li>
+          <li><a href="#GreatBows">Grands Arcs</a> <span id="weapons_nav_totals_18"></span></li>
+          <li><a href="#GreatAxes">Grandes Haches</a> <span id="weapons_nav_totals_19"></span></li>
+          <li><a href="#GreatSpears">Grandes Lances</a> <span id="weapons_nav_totals_20"></span></li>
+          <li><a href="#GreatHammers">Grands Marteaux</a> <span id="weapons_nav_totals_21"></span></li>
+          <li><a href="#Claws">Griffes</a><span id="weapons_nav_totals_22"></span></li>
+          <li><a href="#Axes">Haches</a> <span id="weapons_nav_totals_23"></span></li>
+          <li><a href="#Halberds">Hallebardes</a> <span id="weapons_nav_totals_24"></span></li>
+          <li><a href="#Katanas">Katanas</a> <span id="weapons_nav_totals_25"></span></li>
+          <li><a href="#Twinblades">Lames doubles</a> <span id="weapons_nav_totals_26"></span></li>
+          <li><a href="#Spears">Lances</a> <span id="weapons_nav_totals_27"></span></li>
+          <li><a href="#Hammers">Marteaux</a> <span id="weapons_nav_totals_28"></span></li>
+          <li><a href="#Fists">Poings</a> <span id="weapons_nav_totals_29"></span></li>
+          <li><a href="#SacredSeals">Sceau sacré</a> <span id="weapons_nav_totals_30"></span></li>
+          <li><a href="#Torches">Torches</a> <span id="weapons_nav_totals_31"></span></li>
+          
         </ul>
 
         <div id="weapons_list">
+          
+           <h4 id="Crossbows"><a href="https://eldenring.wiki.fextralife.com/Crossbows">Arbalètes<span id="weapons_totals_1"></span></a></h4>
+          <ul>
+            <li data-id="weapons_1_1">Soldier's Crossbow</li>
+            <li data-id="weapons_1_2">Light Crossbow</li>
+            <li data-id="weapons_1_3">Heavy Crossbow</li>
+            <li data-id="weapons_1_4">Arbalest</li>
+            <li data-id="weapons_1_5">Crepus's Black-Key Crossbow</li>
+            <li data-id="weapons_1_6">Pulley Crossbow</li>
+            <li data-id="weapons_1_7">Full Moon Crossbow</li>
+          </ul>   
+          
+          <h4 id="Bows"><a href="https://eldenring.wiki.fextralife.com/Bows">Arcs<span id="weapons_totals_2"></span></a></h4>
+          <ul>
+            <li data-id="weapons_2_1">Longbow</li>
+            <li data-id="weapons_2_2">Albinauric Bow</li>
+            <li data-id="weapons_2_3">Black Bow</li>
+            <li data-id="weapons_2_4">Pulley Bow</li>
+            <li data-id="weapons_2_5">Horn Bow</li>
+            <li data-id="weapons_2_6">Serpent Bow</li>
+            <li data-id="weapons_2_7">Erdtree Bow</li>
+          </ul>   
+          
+          <h4 id="LightBows"><a href="https://eldenring.wiki.fextralife.com/Light+Bows">Arcs légers<span id="weapons_totals_3"></span></a></h4>
+          <ul>
+            <li data-id="weapons_3_1">Shortbow</li>
+            <li data-id="weapons_3_2">Composite Bow</li>
+            <li data-id="weapons_3_3">Red Branch Shortbow</li>
+            <li data-id="weapons_3_4">Misbegotten Shortbow</li>
+            <li data-id="weapons_3_5">Harp Bow</li>
+          </ul>   
+          
+          <h4 id="ColossalWeapons"><a href="">Armes colossales<span id="weapons_totals_4"></span></a></h4>
+          <ul>
+            <li data-id="weapons_4_1">Duelist Greataxe</li>
+            <li data-id="weapons_4_2">Rotten Greataxe</li>
+            <li data-id="weapons_4_3">Golem's Halberd</li>
+            <li data-id="weapons_4_4">Giant-Crusher</li>
+            <li data-id="weapons_4_5">Prelate's Inferno Crozier</li>
+            <li data-id="weapons_4_6">Great Club</li>
+            <li data-id="weapons_4_7">Troll's Hammer</li>
+            <li data-id="weapons_4_8">Dragon Greatclaw</li>
+            <li data-id="weapons_4_9">Watchdog's Staff</li>
+            <li data-id="weapons_4_10">Staff of the Avatar</li>
+            <li data-id="weapons_4_11">Rotten Staff</li>
+            <li data-id="weapons_4_12">Envoy's Greathorn</li>
+            <li data-id="weapons_4_13">Ghiza's Wheel</li>
+            <li data-id="weapons_4_14">Fallingstar Beast Jaw</li>
+            <li data-id="weapons_4_15">Axe of Godfrey</li>
+          </ul>   
+          
+          <h4 id="Ballistas"><a href="https://eldenring.wiki.fextralife.com/Ballistas">Ballistes<span id="weapons_totals_5"></span></a></h4>
+          <ul>
+            <li data-id="weapons_5_1"><a href="https://eldenring.wiki.fextralife.com/Hand+Ballista">Hand Ballista</a></li>
+            <li data-id="weapons_5_2"><a href="https://eldenring.wiki.fextralife.com/Jar+Cannon">Jar Cannon</a></li>
+          </ul>   
+          
+          <h4 id="GlintstoneStaffs"><a href="https://eldenring.wiki.fextralife.com/Glintstone+Staffs">Bâtons d'éclat<span id="weapons_totals_6"></span></a></h4>
+          <ul>
+            <li data-id="weapons_6_1">Astrologer's Staff</li>
+            <li data-id="weapons_6_2">Glintstone Staff</li>
+            <li data-id="weapons_6_3">Academy Glintstone Staff</li>
+            <li data-id="weapons_6_4">Digger's Staff</li>
+            <li data-id="weapons_6_5">Demi-Human Queen's Staff</li>
+            <li data-id="weapons_6_6">Azur's Glintstone Staff</li>
+            <li data-id="weapons_6_7">Lusat's Glintstone Staff</li>
+            <li data-id="weapons_6_8">Carian Glintstone Staff</li>
+            <li data-id="weapons_6_9">Carian Glintblade Staff</li>
+            <li data-id="weapons_6_10">Carian Regal Scepter</li>
+            <li data-id="weapons_6_11">Albinauric Staff</li>
+            <li data-id="weapons_6_12">Staff of Loss</li>
+            <li data-id="weapons_6_13">Gelmir Glintstone Staff</li>
+            <li data-id="weapons_6_14">Crystal Staff</li>
+            <li data-id="weapons_6_15">Rotten Crystal Staff</li>
+            <li data-id="weapons_6_16">Meteorite Staff</li>
+            <li data-id="weapons_6_17">Staff of the Guilty</li>
+            <li data-id="weapons_6_18">Prince of Death's Staff</li>
+          </ul> 
+          
+          <h4 id="Daggers"><a href="https://eldenring.wiki.fextralife.com/Daggers">Dagues<span id="weapons_totals_7"></span></a></h4>
+          <ul>
+            <li data-id="weapons_7_1">Dagger</li>
+            <li data-id="weapons_7_2">Parrying Dagger</li>
+            <li data-id="weapons_7_3">Misericorde</li>
+            <li data-id="weapons_7_4">Great Knife</li>
+            <li data-id="weapons_7_5">Bloodstained Dagger</li>
+            <li data-id="weapons_7_6">Erdsteel Dagger</li>
+            <li data-id="weapons_7_7">Wakizashi</li>
+            <li data-id="weapons_7_8">Celebrant's Sickle</li>
+            <li data-id="weapons_7_9">Ivory Sickle</li>
+            <li data-id="weapons_7_10">Crystal Knife</li>
+            <li data-id="weapons_7_11">Scorpion's Stinger</li>
+            <li data-id="weapons_7_12">Cinquedea</li>
+            <li data-id="weapons_7_13">Glintstone Kris</li>
+            <li data-id="weapons_7_14">Reduvia</li>
+            <li data-id="weapons_7_15">Blade of Calling</li>
+            <li data-id="weapons_7_16">Black Knife</li>
+          </ul> 
+          
+          <h4 id="ColossalSwords"><a href="https://eldenring.wiki.fextralife.com/Colossal+Swords">Epées colossales<span id="weapons_totals_8"></span></a></h4>
+          <ul>
+            <li data-id="weapons_8_1">Zweihander</li>
+            <li data-id="weapons_8_2">Greagtsword</li>
+            <li data-id="weapons_8_3">Watchdog's Greatsword</li>
+            <li data-id="weapons_8_4">Troll's Golden Sword</li>
+            <li data-id="weapons_8_5">Troll Knight's Sword</li>
+            <li data-id="weapons_8_6">Royal Greatsword</li>
+            <li data-id="weapons_8_7">Grafted Blade Greatsword</li>
+            <li data-id="weapons_8_8">Ruins Greatsword</li>
+            <li data-id="weapons_8_9">Starscourge Greatsword</li>
+            <li data-id="weapons_8_10">Godslatyer's Greatsword</li>
+            <li data-id="weapons_8_11">Maliketh's Black Blade</li>
+          </ul> 
+          
+          <h4 id="CurvedSwords"><a href="https://eldenring.wiki.fextralife.com/Curved+Swords">Epées courbées<span id="weapons_totals_9"></span></a></h4>
+          <ul>
+            <li data-id="weapons_9_1">Scimitar</li>
+            <li data-id="weapons_9_2">Falchion</li>
+            <li data-id="weapons_9_3">Shamshir</li>
+            <li data-id="weapons_9_4">Grossmesser</li>
+            <li data-id="weapons_9_5">Bandit's Curved Sword</li>
+            <li data-id="weapons_9_6">Shotel</li>
+            <li data-id="weapons_9_7">Scavenger's Curved Sword</li>
+            <li data-id="weapons_9_8">Mantis Blade</li>
+            <li data-id="weapons_9_9">Beastman's Curbed Sword</li>
+            <li data-id="weapons_9_10">Flowing Curved Sword</li>
+            <li data-id="weapons_9_11">Serpent-God's Curved Sword</li>
+            <li data-id="weapons_9_12">Magma Blade</li>
+            <li data-id="weapons_9_13">Nox Flowing Sword</li>
+            <li data-id="weapons_9_14">Wing of Astel</li>
+            <li data-id="weapons_9_15">Eclipse Shotel</li>
+          </ul> 
+          
+          <h4 id=""><a href=""><span id="weapons_totals_"></span></a></h4>
+          <ul>
+            <li data-id="weapons__"></li>
+          </ul> 
+          
+          <h4 id=""><a href=""><span id="weapons_totals_"></span></a></h4>
+          <ul>
+            <li data-id="weapons__"></li>
+          </ul> 
+          
+          <h4 id=""><a href=""><span id="weapons_totals_"></span></a></h4>
+          <ul>
+            <li data-id="weapons__"></li>
+          </ul> 
+          
+          <h4 id=""><a href=""><span id="weapons_totals_"></span></a></h4>
+          <ul>
+            <li data-id="weapons__"></li>
+          </ul>
+           
+          
           
           <h4 id="Axes"><a href="https://eldenring.wiki.fextralife.com/Axes">Axes<span id="weapons_totals_1"></span></a></h4>
           <ul>
@@ -120,35 +281,11 @@
             <li data-id="weapons_1_12"><a href="https://eldenring.wiki.fextralife.com/Crescent+Moon+Axe">Crescent Moon Axe</a></li>
             <li data-id="weapons_1_13"><a href="https://eldenring.wiki.fextralife.com/Ripple+Blade">Ripple Blabe</a></li>
           </ul>
-          <h4 id="Ballistas"><a href="https://eldenring.wiki.fextralife.com/Ballistas">Ballistas<span id="weapons_totals_2"></span></a></h4>
-          <ul>
-            <li data-id="weapons_2_1"><a href="https://eldenring.wiki.fextralife.com/Hand+Ballista">Hand Ballista</a></li>
-            <li data-id="weapons_2_2"><a href="https://eldenring.wiki.fextralife.com/Jar+Cannon">Jar Cannon</a></li>
-          </ul>
-          <h4 id="Bows"><a href="https://eldenring.wiki.fextralife.com/Bows">Bows<span id="weapons_totals_3"></span></a></h4>
-          <ul>
-            <li data-id="weapons_3_1"><a href="https://eldenring.wiki.fextralife.com/Longbow">Longbow</a></li>
-            <li data-id="weapons_3_2"><a href="https://eldenring.wiki.fextralife.com/Horn+Bow">Horn Bow</a></li>
-            <li data-id="weapons_3_3"><a href="">Polly Bow</a></li>
-            <li data-id="weapons_3_4"><a href="https://eldenring.wiki.fextralife.com/Black+Bow">Black Bow</a></li>
-            <li data-id="weapons_3_5"><a href="">Serpent Bow</a></li>
-          </ul>
           <h4 id="Claws"><a href="https://eldenring.wiki.fextralife.com/Claws">Claws<span id="weapons_totals_4"></span></a></h4>
           <ul>
             <li data-id="weapons_4_1"><a href="https://eldenring.wiki.fextralife.com/Hookclaws">Hookclaws</a></li>
             <li data-id="weapons_4_2"><a href="https://eldenring.wiki.fextralife.com/Raptor+Talons">Raptor Talons</a></li>
             <li data-id="weapons_4_3"><a href="">Bloodhound Claws</a></li>
-          </ul>
-          <h4 id="ColossalSwords"><a href="https://eldenring.wiki.fextralife.com/Colossal+Swords">Colossal Swords<span id="weapons_totals_5"></span></a></h4>
-          <ul>
-            <li data-id="weapons_5_1"><a href="https://eldenring.wiki.fextralife.com/Starscourge+Greatsword">Starscourge Greatsword</a></li>
-            <li data-id="weapons_5_2"><a href="https://eldenring.wiki.fextralife.com/Zweihander">Zweihander</a></li>
-            <li data-id="weapons_5_3"><a href="https://eldenring.wiki.fextralife.com/Grafted+Blade+Greatsword">Grafted Blade Greatsword</a></li>
-            <li data-id="weapons_5_4"><a href="https://eldenring.wiki.fextralife.com/Maliketh's+Black+Blade">Maliketh's Black Blade</a></li>
-            <li data-id="weapons_5_5"><a href="https://eldenring.wiki.fextralife.com/Troll+Knight's+Sword">Troll Knight's Sword</a></li>
-            <li data-id="weapons_5_6"><a href="https://eldenring.wiki.fextralife.com/Godslayer's+Greatsword">Godslayer's Greatsword</a></li>
-            <li data-id="weapons_5_7"><a href="https://eldenring.wiki.fextralife.com/Ruins+Greatsword">Ruins Greatsword</a></li>
-            <li data-id="weapons_5_8"><a href="https://eldenring.wiki.fextralife.com/Greatsword">Greatsword</a></li>
           </ul>
           
         </div>
@@ -227,6 +364,55 @@
         </div>
       </div>
       
+      <!-- DIVERS START -->
+      <div class="tab-pane" id="tabDivers">
+        <h2>Divers<span id="divers_overall_total"></span></h2>
+        <ul class="table_of_contents">
+          <li><a href="#diversCrystalTears">Crystal Tears</a> <span id="divers_nav_totals_1"></span></li>
+        </ul>
+
+        <div id="divers_list">
+          
+          <h4 id="diversCrystalTears"><a href="">Crystal Tears<span id="divers_totals_1"></span></a></h4>
+          <ul>
+            <li data-id="divers_1_1"><a href="">Crimson Crystal Tear</a></li>
+            <li data-id="divers_1_31"><a href="">Crimson Crystal Tear</a></li>
+            <li data-id="divers_1_2"><a href="">Crimsonspill Crystal Tear</a></li>
+            <li data-id="divers_1_3"><a href="">Crimsonburst Crystal Tear</a></li>
+            <li data-id="divers_1_4"><a href="">Cerulean Crystal Tear</a></li>
+            <li data-id="divers_1_32"><a href="">Cerulean Crystal Tear</a></li>
+            <li data-id="divers_1_5"><a href="">Greenspill Crystal Tear</a></li>
+            <li data-id="divers_1_6"><a href="">Greenburst Crystal Tear</a></li>
+            <li data-id="divers_1_7"><a href="">Strength-Knot Crystal Tear</a></li>
+            <li data-id="divers_1_8"><a href="">Dexterity-Knot Crystal Tear</a></li>
+            <li data-id="divers_1_9"><a href="">Intelligence-Knot Crystal Tear</a></li>
+            <li data-id="divers_1_10"><a href="">Faith-Knot Crystal Tear</a></li>
+            <li data-id="divers_1_11"><a href="">Opaline Hardtear</a></li>
+            <li data-id="divers_1_12"><a href="">Speckled Hardtear</a></li>
+            <li data-id="divers_1_13"><a href="">Leaden Hardtear</a></li>
+            <li data-id="divers_1_14"><a href="">Magic-Shrouding Cracked Tear</a></li>
+            <li data-id="divers_1_15"><a href="">Flame-Shrouding Cracked Tear</a></li>
+            <li data-id="divers_1_16"><a href="">Lightning-Shrouding Cracked Tear</a></li>
+            <li data-id="divers_1_17"><a href="">Holy-Shrouding Cracked Tear</a></li>
+            <li data-id="divers_1_18"><a href="">Stonebarb Cracked Tear</a></li>
+            <li data-id="divers_1_19"><a href="">Spiked Cracked Tear</a></li>
+            <li data-id="divers_1_20"><a href="">Thorny Cracked Tear</a></li>
+            <li data-id="divers_1_21"><a href="">Twiggy Cracked Tear</a></li>
+            <li data-id="divers_1_22"><a href="">Winged Crystal Tear</a></li>
+            <li data-id="divers_1_23"><a href="">Windy Crystal Tear</a></li>
+            <li data-id="divers_1_24"><a href="">Opaline Bubbletear</a></li>
+            <li data-id="divers_1_25"><a href="">Crimson Bubbletear</a></li>
+            <li data-id="divers_1_26"><a href="">Crimsonwhorl Bubbletear</a></li>
+            <li data-id="divers_1_27"><a href="">Cerulean Hidden Tear</a></li>
+            <li data-id="divers_1_28"><a href="">Purifying Crystal Tear</a></li>
+            <li data-id="divers_1_29"><a href="">Ruptured Crystal Tear</a></li>
+            <li data-id="divers_1_30"><a href="">Ruptured Crystal Tear</a></li>
+          </ul>
+          
+        </div>
+      </div>
+      
+      
       <!-- TROPHY START -->
       <div class="tab-pane" id="tabTrophies">
         <h2>Trophée<span id="trophies_overall_total"></span></h2>
@@ -239,36 +425,46 @@
           <h4 id="trophy"><a href="">Trophée<span id="trophies_totals_1"></span></a></h4>
           <ul>
             <li data-id="trophies_1_1"><a href="">Atteindre : Bastion de la Table ronde</a></li>
-            <li data-id="trophies_1_"><a href="">Vaincre : Margit le Déchu</a></li>
-            <li data-id="trophies_1_"><a href="">Vaincre : Godrick, le porteur de fragment</a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>
-            <li data-id="trophies_1_"><a href=""></a></li>v
+            <li data-id="trophies_1_2"><a href="">Vaincre : Margit le Déchu</a></li>
+            <li data-id="trophies_1_3"><a href="">Vaincre : Godrick, le porteur de fragment</a></li>
+            <li data-id="trophies_1_4"><a href="">Restaurer une Rune majeure</a></li>
+            <li data-id="trophies_1_5"><a href="">Vaincre : Loup cramoisi de Radagon</a></li>
+            <li data-id="trophies_1_6"><a href="">Vaincre : Chimère léonine</a></li>
+            <li data-id="trophies_1_7"><a href="">Vaincre : Rennala, reine de la pleine lune</a></li>
+            <li data-id="trophies_1_8"><a href="">Vaincre : Garde royale Loretta</a></li>
+            <li data-id="trophies_1_9"><a href="">Vaincre : Radahn, le porteur de fragment</a></li>
+            <li data-id="trophies_1_10"><a href="">Vaincre : Larme imitatrice</a></li>
+            <li data-id="trophies_1_11"><a href="">Vaincre : Makar le Dragon du magma</a></li>
+            <li data-id="trophies_1_12"><a href="">Vaincre : Godfrey, premier Seigneur d'Elden</a></li>
+            <li data-id="trophies_1_13"><a href="">Vaincre : Morgott, le porteur de fragment</a></li>
+            <li data-id="trophies_1_14"><a href="">Vaincre : Astel le Rejeton du vide</a></li>
+            <li data-id="trophies_1_15"><a href="">Vaincre : Esprit ancestral</a></li>
+            <li data-id="trophies_1_16"><a href="">Arme pourfendeuse du divin : Améliorer une arme au max</a></li>
+            <li data-id="trophies_1_17"><a href="">Vaincre : Géant de feu</a></li>
+            <li data-id="trophies_1_18"><a href="">Vaincre : Commandant Niall</a></li>
+            <li data-id="trophies_1_19"><a href="">Vaincre : Rykard, le porteur de fragment</a></li>
+            <li data-id="trophies_1_20"><a href="">Embraser l'Arbre-Monde</a></li>
+            <li data-id="trophies_1_21"><a href="">Vaincre : Noble sanctechair</a></li>
+            <li data-id="trophies_1_22"><a href="">Vaincre : Duo sanctechair</a></li>
+            <li data-id="trophies_1_23"><a href="">Vaincre : Soldat draconide de Nokstella</a></li>
+            <li data-id="trophies_1_24"><a href="">Vaincre : Elemer du Roncier</a></li>
+            <li data-id="trophies_1_25"><a href="">Vaincre : Gargouilles vaillantes</a></li>
+            <li data-id="trophies_1_26"><a href="">Vaincre : Maliketh la Lame d'ébène</a></li>
+            <li data-id="trophies_1_27"><a href="">Vaincre : Loretta, chevaleresse de l'Arbre-Sacré</a></li>
+            <li data-id="trophies_1_28"><a href="">Vaincre : Hoarah Loux le Guerrier</a></li>
+            <li data-id="trophies_1_29"><a href="">Vaincre : Esprit ancestral royal</a></li>
+            <li data-id="trophies_1_30"><a href="">Vaincre : Mohg, le porteur de fragment</a></li>
+            <li data-id="trophies_1_31"><a href="">Vaincre : Malenia, la porteuse de fragment</a></li>
+            <li data-id="trophies_1_32"><a href="">Vaincre : Mohg le Réprouvé</a></li>
+            <li data-id="trophies_1_33"><a href="">Vaincre : Fortissax la Liche draconique</a></li>
+            <li data-id="trophies_1_34"><a href="">Vaincre : Placidusax, seigneur draconique</a></li>
+            <li data-id="trophies_1_35"><a href="">Fin : Âge des étoiles</a></li>
+            <li data-id="trophies_1_36"><a href="">Fin : Seigneur d'Elden</a></li>
+            <li data-id="trophies_1_37"><a href="">Obtenir : Esprits légendaires</a></li>
+            <li data-id="trophies_1_38"><a href="">Obtenir : Talismans légendaires</a></li>
+            <li data-id="trophies_1_39"><a href="">Obtenir : Sorts légendaires</a></li>
+            <li data-id="trophies_1_40"><a href="">Obtenir : Armes légendaires</a></li>
+            <li data-id="trophies_1_41"><a href="">Fin : Seigneur de la Flamme exaltée</a></li>
           </ul>
           
         </div>
