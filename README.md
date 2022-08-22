@@ -1,4 +1,4 @@
-# Dark Souls 3 Cheat Sheet
+# Elden Ring
 
 To view the cheat sheet [click here](http://MarcLadon.github.io/Elden-Ring/).
 
